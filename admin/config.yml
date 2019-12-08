@@ -27,7 +27,7 @@ collections:
       - {label: "Squard (in m2)", name: "squard", widget: "number"}
       - name: Description
         label: description
-        widget: list
+        widget: object
         fields:
           - {label: NameEL, name: el, widget: string}
           - {label: NameEN, name: en, widget: string}
