@@ -19,6 +19,7 @@ collections:
     folder: "_properties" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    identifier_field: title 
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "property"}
       - label: title
@@ -26,7 +27,7 @@ collections:
         widget: object
         fields:
           - {label: en, name: en, widget: string}
-          - {label: el, name: el, identifier_field: el, widget: string}
+          - {label: el, name: el, widget: string}
       - {label: Image, name: image, widget: image}
       - {label: "Squard (in m2)", name: "squard", widget: "number"}
       - label: address
