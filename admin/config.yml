@@ -25,9 +25,10 @@ collections:
       - {label: "TitleEl", name: "title", identifier_field: "title.en", widget: "string"}
       - {label: Image, name: image, widget: image}
       - {label: "Squard (in m2)", name: "squard", widget: "number"}
-      - name: Description
-        label: description
-        widget: object
+      - name: "Description"
+        label: "description"
+        widget: "list"
+        allow_add: false
         fields:
           - {label: NameEL, name: el, widget: string}
           - {label: NameEN, name: en, widget: string}
