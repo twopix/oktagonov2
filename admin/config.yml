@@ -26,7 +26,7 @@ collections:
         widget: object
         fields:
           - {label: en, name: en, widget: string}
-          - {label: el, name: el, widget: string}
+          - {label: el, name: el, identifier_field: el, widget: string}
       - {label: Image, name: image, widget: image}
       - {label: "Squard (in m2)", name: "squard", widget: "number"}
       - label: address
