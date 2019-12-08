@@ -28,6 +28,10 @@ info:
   - contact: Επικοινωνία
   - related: Σχετικά ακήνιτα
 
+# set to 'true' to enable Netlify CMS (/admin) in production builds
+netlifycms: true
+
+
 nav:
   
 - title: 
