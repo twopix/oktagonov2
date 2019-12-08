@@ -10,7 +10,7 @@ backend:
 
 
 media_folder: "assets/img/properties" # Folder where user uploaded files should go
-
+public_folder: "/assets/img/"
 publish_mode: editorial_workflow # Enable drafts
 
 collections:
