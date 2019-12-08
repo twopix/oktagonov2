@@ -22,7 +22,8 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "property"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Featured Image", name: "thumbnail", image: "image"}
+      - {label: "TitleEl", name: "title", identifier_field: "title.en", widget: "string"}
+      - {label: "Featured Image", name: "image", image: "image"}
       - {label: "Squard (in m2)", name: "squard", widget: "number"}
       - name: Description
         label: description
