@@ -1,0 +1,24 @@
+# Everything you need to know about configuring the CMS can be found here:-
+# https://www.netlifycms.org/docs/configuration-options/
+
+backend:
+  name: git-gateway # Netlify’s Git Gateway connects to Git provider’s API
+  branch: master # Branch to update (master by default)
+
+
+media_folder: "assets/img/properties" # Folder where user uploaded files should go
+
+publish_mode: editorial_workflow # Enable drafts
+
+collections:
+  - name: "properties" # Used in routes, e.g., /admin/collections/blog
+    label: "Properties" # Used in the UI
+    folder: "_properties" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "property"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Featured Image", name: "thumbnail", image: "image"}
+      - {label: "Squard (in m2)", name: "squard", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
