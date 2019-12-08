@@ -17,15 +17,15 @@ description:
     κτίσμα 25τμ. Χρήζει ανακαίνισης.
 price: '25.000'
 gallery:
-  - properties/ktisma25_1.jpg
-  - properties/ktisma25_2.jpg
-  - properties/ktisma25_3.jpg
-  - properties/ktisma25_4.jpg
-  - properties/ktisma25_5.jpg
-  - properties/ktisma25_6.jpg
-  - properties/ktisma25_7.jpg
-  - properties/ktisma25_8.jpg
-  - properties/ktisma25_9.jpg
-  - properties/ktisma25_10.jpg
+  - /assets/img/properties/ktisma25_1.jpg
+  - /assets/img/properties/ktisma25_2.jpg
+  - /assets/img/properties/ktisma25_3.jpg
+  - /assets/img/properties/ktisma25_4.jpg
+  - /assets/img/properties/ktisma25_5.jpg
+  - /assets/img/properties/ktisma25_6.jpg
+  - /assets/img/properties/ktisma25_7.jpg
+  - /assets/img/properties/ktisma25_8.jpg
+  - /assets/img/properties/ktisma25_9.jpg
+  - /assets/img/properties/ktisma25_10.jpg
 ---
  
