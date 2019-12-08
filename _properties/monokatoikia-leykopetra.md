@@ -3,7 +3,7 @@ layout: property
 title:
   el: Μονοκατοικία προς πώληση
   en: Μονοκατοικία προς πώληση
-image: /assets/img/properties/monokatoikia-leykopetra4.jpg
+image: /assets/img/properties/monokatoikia-leykopetra1.jpg
 squard: 195
 address:
   el: 'Λευκόπετρα Ημαθίας,Βέροια'
