@@ -1,50 +1,29 @@
 ---
-title: 
+layout: property
+title:
   el: Μονοκατοικία προς πώληση
   en: Μονοκατοικία προς πώληση
-layout: property
-image: properties/monokatoikia-leykopetra1.jpg
-description: 
-  el: "Πωλείται στο Λευκόπετρα Ημαθίας, 15 λεπτά από τη Βέροια, μεταξύ των οικισμών Γεωργιανών και Μικρής Σάντας"
-  en: "Πωλείται στο Λευκόπετρα Ημαθίας, 15 λεπτά από τη Βέροια, μεταξύ των οικισμών Γεωργιανών και Μικρής Σάντας"
+image: /assets/img/monokatoikia-leykopetra4.jpg
 squard: 195
-address: 
-  el: Λευκόπετρα Ημαθίας,Βέροια
-  en: Λευκόπετρα Ημαθίας,Βέροια
-price: "98.000"
-gallery: 
-    - "properties/monokatoikia-leykopetra1.jpg"
-    - "properties/monokatoikia-leykopetra2.jpg"
-    - "properties/monokatoikia-leykopetra3.jpg"
-    - "properties/monokatoikia-leykopetra4.jpg"
-    - "properties/monokatoikia-leykopetra5.jpg"
-table:
-    - key: Τιμή ανά τ.μ.
-      value: € 502 
-    - key: Περιοχή 
-      value: Λευκόπετρα  Ημαθίας, μεταξύ Γεωργιανοί και Μικρή Σάντα 
-    - key: Ζώνη 
-      value:    Οικιστική
-    - key:  Έτος κατασκευής	 
-      value: 1990
-    - key:  Σύστημα θέρμανσης 
-      value: Πετρέλαιο (αυτόνομη θέρμανση
-    - key:  Επίπεδα	 
-      value:      3
-    - key:  Κουζίνες	 
-      value:      1
-    - key:  Σαλόνι -  τραπεζαρία	 
-      value:      1
-    - key:  Υπνοδωμάτια	 
-      value:      3
-    - key:  Μπάνια	 
-      value:  2
-    - key:  Υπόγεια αποθήκη 
-      value: 1 
-    - key:  Κλειστό γκαράζ 
-      value: 1 
-
---- 
+address:
+  el: 'Λευκόπετρα Ημαθίας,Βέροια'
+  en: 'Λευκόπετρα Ημαθίας,Βέροια'
+description:
+  el: >-
+    Πωλείται στο Λευκόπετρα Ημαθίας, 15 λεπτά από τη Βέροια, μεταξύ των οικισμών
+    Γεωργιανών και Μικρής Σάντας
+  en: >-
+    Πωλείται στο Λευκόπετρα Ημαθίας, 15 λεπτά από τη Βέροια, μεταξύ των οικισμών
+    Γεωργιανών και Μικρής Σάντας
+price: '98.000'
+gallery:
+  - properties/monokatoikia-leykopetra1.jpg
+  - properties/monokatoikia-leykopetra2.jpg
+  - properties/monokatoikia-leykopetra3.jpg
+  - properties/monokatoikia-leykopetra4.jpg
+  - properties/monokatoikia-leykopetra5.jpg
+---
+ 
 
 Λευκόπετρα Ημαθίας, 15 λεπτά από τη Βέροια, μεταξύ των οικισμών
 Γεωργιανών και Μικρής Σάντας, πωλείται ακίνητο το οποίο αποτελείται από:  
