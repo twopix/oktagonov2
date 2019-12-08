@@ -19,9 +19,9 @@ title: "test"
                                             <ul>
                                                 {% for image in page.gallery %}
                                                 <!-- SLIDE  -->
-                                                <li data-index="rs-{{forloop.index}}"  data-transition="fade" data-slotamount="7"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="{{ "/assets/img/" | append: image | prepend: site.baseurl_root }}"  data-rotate="0"  data-saveperformance="off"  data-description="">
+                                                <li data-index="rs-{{forloop.index}}"  data-transition="fade" data-slotamount="7"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="{{ image | prepend: site.baseurl_root }}"  data-rotate="0"  data-saveperformance="off"  data-description="">
                                                     <!-- MAIN IMAGE -->
-                                                    <img src="{{ "/assets/img/" | append: image | prepend: site.baseurl_root }}"  alt=""  data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                                                    <img src="{{ image | prepend: site.baseurl_root }}"  alt=""  data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
                                                     <!-- LAYERS -->
                                                 </li>
                                                 {% endfor %}
