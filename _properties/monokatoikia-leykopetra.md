@@ -17,11 +17,11 @@ description:
     Γεωργιανών και Μικρής Σάντας
 price: '98.000'
 gallery:
-  - properties/monokatoikia-leykopetra1.jpg
-  - properties/monokatoikia-leykopetra2.jpg
-  - properties/monokatoikia-leykopetra3.jpg
-  - properties/monokatoikia-leykopetra4.jpg
-  - properties/monokatoikia-leykopetra5.jpg
+  - /assets/img/properties/monokatoikia-leykopetra1.jpg
+  - /assets/img/properties/monokatoikia-leykopetra2.jpg
+  - /assets/img/properties/monokatoikia-leykopetra3.jpg
+  - /assets/img/properties/monokatoikia-leykopetra4.jpg
+  - /assets/img/properties/monokatoikia-leykopetra5.jpg
 ---
  
 
