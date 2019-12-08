@@ -1,10 +1,10 @@
 ---
 layout: property
 title: george med
-thumbnail: properties/ktisma25_1.jpg
+image: sdsdf
 squard: 3333
 Description:
-  - el: test el
-    en: test en
+  - el: '56'
+    en: asd
 ---
 tesat bodh
