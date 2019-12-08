@@ -1,0 +1,46 @@
+global:
+  title: Oktagono Properties
+  description: "Oktagono με έδρα τη Θεσσαλονίκη δραστηριοποιείται στις μεσιτικές υπηρεσίες, εύρεσης, πώλησης και ενοικίασης ακινήτων, επαγγελματικών χώρων και γης."
+  address: 10 Leontos Sofou Str., 54625, Thessaloniki
+  contact_us: Please Contact Us
+  assignment: Assignment of property
+  assignment_desc: Want to Sell your Property or Rent a House with easy step?
+  lbl_contact: Contact
+  lbl_contact_phone: Cotnact phone
+  lbl_address: Address
+  lbl_phone: Telephones
+  lbl_recentproperties: Recently added
+  lbl_recentproperties_description: These are the most recent properties added
+  lbl_property_desc: Property Description
+  lbl_property_feat: Property Features
+  lbl_more: more...
+
+  og:
+    title: Oktagono Properties
+    image: "/assets/img/logo-oktagonoproperties.png"
+    description: "Η εταιρεία Oktagono με έδρα τη Θεσσαλονίκη δραστηριοποιείται στις μεσιτικές υπηρεσίες, εύρεσης, πώλησης και ενοικίασης ακινήτων, επαγγελματικών χώρων και γης."
+    locale: en_EN
+
+
+email: info@oktagonoproperties.com
+address: 10 Leontos Sofou Str., 54625, Thessaloniki
+phone: +30 2311 268824
+mobile: +30 6973525751 
+logo: "<img src='/assets/img/logo-oktagonoproperties.png' alt='logo' class='img-responsive'>"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+info:
+  - contact: Επικοινωνία
+  - related: Σχετικά ακήνιτα             
+
+nav:
+  
+- title: Αρχική 
+  url: /
+  class: ti-home
+- title: Ακίνητα
+  url: /properties.html
+  class:  ti-list-ol
+- title: Επικοινωνία
+  url: /contact.html
+  class: ti-email

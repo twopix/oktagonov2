@@ -1,0 +1,178 @@
+---
+layout: default
+title: "test"
+---
+<section class="page">
+    <div class="container">
+        <div class="page-wrap">
+            <div class="row">
+                <div class="col-sm-7">
+                    <h4 class="page-header">{{page.title[site.lang] }}</h4>
+                    <!-- SLIDER EXAMPLE -->
+                    <section class="slide">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card pad-all">
+                                    <div id="rev_slider_60_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="vimeo-gallery58">
+                                        <!-- START REVOLUTION SLIDER 5.0.7 auto mode -->
+                                        <div id="rev_slider_details" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
+                                            <ul>
+                                                {% for image in page.gallery %}
+                                                <!-- SLIDE  -->
+                                                <li data-index="rs-{{forloop.index}}"  data-transition="fade" data-slotamount="7"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="{{ "/assets/img/" | append: image | prepend: site.baseurl_root }}"  data-rotate="0"  data-saveperformance="off"  data-description="">
+                                                    <!-- MAIN IMAGE -->
+                                                    <img src="{{ "/assets/img/" | append: image | prepend: site.baseurl_root }}"  alt=""  data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                                                    <!-- LAYERS -->
+                                                </li>
+                                                {% endfor %}
+                                            </ul>
+                                            <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                                        </div>
+                                    </div>
+                                    <!-- END REVOLUTION SLIDER -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel pad-all">
+                            <div class="listingInfo">
+                                <h3><a href="#" class="name">{{page.title[site.lang]}}</a></h3>
+                                <p class="listingLocation"><i class="fa fa-map-o"></i>{{page.address[site.lang]}}</p>
+                                <p class="lead">{{page.name[site.lang]}} </p>
+                            </div>
+                        </div>
+                        <div class="panel pad-all">
+                            <h3 class="hr hr-after">{% t global.lbl_property_desc %} </h3>
+                            <p class="lead">{{page.description[site.lang]}} </p>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    {{content}}
+                                </div>
+                                <!--<div class="col-sm-4">
+                                    <div class="panel panel-default panel-aside m-top-20">
+                                        <ul class="list-group list-group-aside">
+                                            <li class="list-group-item"><a href="#"><i class="fa fa-block fa-star"></i> Save to Favorite</a></li>
+                                            <li class="list-group-item"><a href="#"><i class="fa fa-block fa-bell"></i> Create Email Alert</a></li>
+                                            <li class="list-group-item"><a href="#"><i class="fa fa-block fa-print"></i> Print this page</a></li>
+                                            <li class="list-group-item"><a href="#"><i class="fa fa-block fa-exclamation-circle"></i> Report Listing</a></li>
+                                        </ul>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <h3>{% t global.lbl_property_feat %}</h3>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4">
+                                    <ul class="features-list">
+                                        <li><i class="fa fa-check"></i> Air conditioning</li>
+                                        <li><i class="fa fa-check"></i> Balcony</li>
+                                        <li><i class="fa fa-times"></i> Bedding</li>
+                                        <li><i class="fa fa-check"></i> Cable TV</li>
+                                        <li><i class="fa fa-times"></i> Cleaning after exit</li>
+                                        <li><i class="fa fa-check"></i> Cofee pot</li>
+                                        <li><i class="fa fa-check"></i> Computer</li>
+                                        <li><i class="fa fa-times"></i> Cot</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <ul class="features-list">
+                                        <li><i class="fa fa-check"></i> Internet</li>
+                                        <li><i class="fa fa-times"></i> Iron</li>
+                                        <li><i class="fa fa-check"></i> Juicer</li>
+                                        <li><i class="fa fa-times"></i> Lift</li>
+                                        <li><i class="fa fa-times"></i> Microwave</li>
+                                        <li><i class="fa fa-check"></i> Oven</li>
+                                        <li><i class="fa fa-times"></i> Parking</li>
+                                        <li><i class="fa fa-times"></i> Parquet</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <ul class="features-list">
+                                        <li><i class="fa fa-times"></i> Radio</li>
+                                        <li><i class="fa fa-check"></i> Roof terrace</li>
+                                        <li><i class="fa fa-times"></i> Smoking allowed</li>
+                                        <li><i class="fa fa-check"></i> Terrace</li>
+                                        <li><i class="fa fa-times"></i> Toaster</li>
+                                        <li><i class="fa fa-check"></i> Towelwes</li>
+                                        <li><i class="fa fa-check"></i> Use of pool</li>
+                                        <li><i class="fa fa-check"></i> Video</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/panel -->
+                    </section>
+                </div>
+                <div class="col-sm-5">
+                    <h4 class="page-header">{% t global.lbl_contact %}</h4>
+                    <div class="widget card pad-all">
+                        <div class="advert row">
+                            <div class="logo-wrap col-sm-4">
+                                {{site.logo}}
+                                <div class="rating" data-stars="5.0"><span>(26)</span></div>
+                            </div>
+                            <div class="col-sm-8">
+                                <h3>{{site.title}}</h3>
+                                <p>{% t global.address %}.</p>
+                                <p class="btn-group clearfix" role="group" aria-label="...">
+                                    <button class="btn btn-default btn-raised js-open-modal-left" data-em-selector="#ajaxModal" data-em-position="left" data-em-push-content="true" data-em-css="custom-class" data-em-keyboard="false" data-em-backdrop="static">Contact Agency</button>
+                                    <button class="btn btn-danger btn-raised js-open-modal-right" data-em-selector="#shedule" data-em-position="right" data-em-push-content="true" data-em-css="custom-class" data-em-keyboard="false" data-em-backdrop="static">More propeties</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /end:widget -->
+                    {% if page.table  %}
+                    <div class="widget card pad-all">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <tbody>
+                                {% for row in page.table %}
+                                    <tr>
+                                        <th scope="row"> {{row.key}} </th>
+                                        <td>{{row.value}} </td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    {% endif%}
+                    <!-- /widget -->
+                    <div class="widget card pad-all">
+                        <div id="map">
+                        <iframe  width="100%"  height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAvq9HIQexYIGtKKa1NhIeF_jRWRm47YCc&q={{page.address[site.lang] | replace: " ", "+"}}" allowfullscreen></iframe></div>
+                    </div>
+                    <!-- /widget -->
+                    <div class="card"> 
+                    {% for property in site.properties limit:4 %}
+                        <ul class="childs">
+                            <li class="child-property">
+                                <div class="card-content">
+                                    <div class="listingInfo">
+                                        <div class="propertyStats">
+                                        </div>
+                                        <div class="pull-right">
+                                            <p class="priceText">{{property.price | append: "&euro;" }} </p>
+
+                                        </div>
+                                        <div class="vcard">
+                                            <h2><a href="{{property.url | prepend: site.baseurl }}" class="name">{{property.title[site.lang]}}</a></h2>
+                                            <p class="listingLocation">{{property.address[site.lang]}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-action text-right">
+                                    <a href="{{property.url | prepend: site.baseurl }}" data-toggle="tooltip" data-placement="top" title="{{property.title[site.lang]}}" data-original-title="{{property.title[site.lang]}}"><i class="fa fa-angle-double-right"></i> {% t global.lbl_more %} </a>
+                                </div>
+                                <!-- end. Card actions -->
+                            </li>
+                            <!-- end:child property -->
+                        </ul>
+                    {% endfor %}
+                    </div>
+                </div>
+                <!-- end: Col -->
+            </div>
+        </div>
+        <!-- /page content -->  
+    </div>
+</section>
