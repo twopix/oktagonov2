@@ -29,16 +29,4 @@ logo: "<img src='/assets/img/logo-oktagonoproperties.png' alt='logo' class='img-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 info:
-  - related: Σχετικά ακήνιτα             
-
-nav:
-  
-- title: Αρχική 
-  url: /
-  class: ti-home
-- title: Ακίνητα
-  url: /properties.html
-  class:  ti-list-ol
-- title: Επικοινωνία
-  url: /contact.html
-  class: ti-email
+  - related: Σχετικά ακήνιτα
