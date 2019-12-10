@@ -4,7 +4,7 @@ title:
   el: 'Μεγάλη ευκαιρία '
   en: Great opportunity
 image: /assets/img/petrinoktisma2.jpg
-squard: 29
+squard: 30
 address:
   el: 'Θάσος, 3χλμ από τη θάλασσα'
   en: 'Thassos, Greece'
