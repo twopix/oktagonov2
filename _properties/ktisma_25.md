@@ -4,7 +4,7 @@ title:
   el: Εξαιρετική Ευκαιρία
   en: Excellent Opportunity
 image: /assets/img/properties/ktisma25_1.jpg
-squard: 50
+squard: 25
 address:
   el: 'Θάσος, Μπροστά στη θάλασσα'
   en: 'Thassos, Greece'
@@ -13,8 +13,8 @@ description:
     Πωλείται ακριβώς μπροστά στη θάλασσα σε χωριό της Θάσου, παραδοσιακό κτίσμα
     25τμ. Χρήζει ανακαίνισης.
   en: >-
-    Sale. Πωλείται ακριβώς μπροστά στη θάλασσα σε χωριό της Θάσου, παραδοσιακό
-    κτίσμα 25τμ. Χρήζει ανακαίνισης.
+    For sale right in front of the sea in a village of Thassos, traditional
+    building 25sqm. Needs renovation.
 price: '25.000'
 gallery:
   - /assets/img/properties/ktisma25_1.jpg
@@ -28,4 +28,4 @@ gallery:
   - /assets/img/properties/ktisma25_9.jpg
   - /assets/img/properties/ktisma25_10.jpg
 ---
- 
+\-
