@@ -6,8 +6,8 @@ title:
 image: /assets/img/properties/monokatoikia-leykopetra1.jpg
 squard: 195
 address:
-  el: 'Leukopetra Imathia, Veria, Greece'
-  en: 'Λευκόπετρα Ημαθίας,Βέροια'
+  el: 'Λευκόπετρα Ημαθίας,Βέροια'
+  en: 'Leukopetra Imathia, Veria, Greece'
 description:
   el: >-
     Πωλείται στο Λευκόπετρα Ημαθίας, 15 λεπτά από τη Βέροια, μεταξύ των οικισμών
