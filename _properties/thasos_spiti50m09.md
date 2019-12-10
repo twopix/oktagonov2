@@ -1,22 +1,22 @@
 ---
 layout: property
 title:
-  el: Excellent Opportunity
-  en: Εξαιρετική Ευκαιρία
+  el: Εξαιρετική Ευκαιρία
+  en: Excellent Opportunity
 image: /assets/img/properties/thasos_spiti50m09.jpg
 squard: 50
 address:
-  el: 'Thassos, Greece'
-  en: 'Θάσος, 3χλμ από την ακτή με άπλετη θέα'
+  el: 'Θάσος, 3χλμ από την ακτή με άπλετη θέα'
+  en: 'Thassos, Greece'
 description:
   el: >-
-    50sqm stone house in a traditional village of Thassos, 3km from the coast
-    with great view, in excellent condition with 2 levels and furnished with
-    traditional furniture and objects. Excellent investment!
-  en: >-
     Πετρόχτιστο σπίτι 50τμ σε παραδοσιακό οικισμό της Θάσου, 3χλμ από την ακτή
     με άπλετη θέα, σε άριστη κατάσταση με 2 επίπεδα και επιπλωμένο με
     παραδοσιακά έπιπλα και αντικείμενα. Άριστη επένδυση!
+  en: >-
+    50sqm stone house in a traditional village of Thassos, 3km from the coast
+    with great view, in excellent condition with 2 levels and furnished with
+    traditional furniture and objects. Excellent investment!
 price: '50.000'
 gallery:
   - /assets/img/properties/thasos_spiti50m01.jpg
@@ -35,4 +35,4 @@ gallery:
   - /assets/img/properties/thasos_spiti50m14.jpg
   - /assets/img/properties/thasos_spiti50m15.jpg
 ---
-\-
+
