@@ -41,6 +41,8 @@
 	<link rel="stylesheet" type="text/css" href="{{ "/assets/revolution/css/navigation.css" | prepend: site.baseurl_root }}">
 	<!-- Magnific Popup core CSS file -->
 	<link rel="stylesheet" href="{{ "/assets/css/magnific-popup.css" | prepend: site.baseurl_root }}">
+	{%- comment -%} flexslider {%- endcomment -%}
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.2/flexslider.css">
 	<!-- Custom styles for this template -->
 	<link href="{{ "/assets/css/style.css" | prepend: site.baseurl_root }}" rel="stylesheet">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -119,7 +121,7 @@
 									<span class="icon-bar">
 										</span>
 								</button>
-								<a class="navbar-brand" href="{{site.baseurl}}">
+								<a class="navbar-brand" href="{{site.nav[0].url | prepend: site.baseurl}}">
                                     {{site.logo}}
 								</a>
 							</div>
@@ -198,11 +200,17 @@
 	<script type="text/javascript" src="{{ "/assets/js/jquery.js" | prepend: site.baseurl_root }}"></script>
 	<script src="{{ "/assets/js/bootstrap.min.js" | prepend: site.baseurl_root }}"></script>
 	<script src="{{ "/assets/js/scripts.js" | prepend: site.baseurl_root }}"></script>
+	{% if page.layout == 'index' %}
 	<!-- REVOLUTION JS FILES -->
 	<script type="text/javascript" src="{{ "/assets/revolution/js/jquery.themepunch.tools.min.js" | prepend: site.baseurl_root }}"></script>
 	<script type="text/javascript" src="{{ "/assets/revolution/js/jquery.themepunch.revolution.min.js" | prepend: site.baseurl_root }}"></script>
+	{% endif %}
+	{% if page.layout == 'property' %}
 	<!-- Magnific Popup core JS file -->
 	<script src="{{ "/assets/js/jquery.magnific-popup.js" | prepend: site.baseurl_root }}"></script>
+	{%- comment -%} flexslider {%- endcomment -%}
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.2/jquery.flexslider.js"></script>
+	{% endif %} 
 	<script src="{{ "/assets/js/init.js" | prepend: site.baseurl_root }}"></script>
 
 </body>

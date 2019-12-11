@@ -2731,70 +2731,17 @@ abbr[title] {
 	border-radius: 0;
 	color: #ff4081;
 }
-
-#pricing h2 {
-	margin: 20px 0;
+ 
+#slider {
+	height: 400px;
+	overflow: hidden;
+	margin-bottom: 0;
+} 
+#carousel {
+	height: 100px;
+	overflow: hidden;
+	margin-bottom: 0;
 }
-
-#pricing .panel {
-	margin-top: 35px;
-	margin-bottom: 35px;
-	padding: 25px 30px;
-}
-
-#pricing .panel.panel-default .panel-heading {
-	border-bottom: 1px solid #eceff2;
-	background: transparent;
-}
-
-#pricing .panel.panel-default .list-group-item {
-	border-color: #eceff2;
-}
-
-#pricing .panel.panel-highlight {
-	border: none;
-	border-radius: 0;
-}
-
-#pricing .panel .panel-heading .price {
-	margin: 13px;
-	padding: 15px 0;
-	color: #bd2067;
-	font-weight: 700;
-	font-size: 50px;
-}
-
-#pricing .panel .panel-heading .price small {
-	font-size: .4em;
-}
-
-#pricing .panel .panel-body {
-	padding: 30px 50px 20px;
-}
-
-#pricing .panel ul.list-group li.list-group-item.text-muted {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-pack: center;
-	-ms-flex-align: center;
-	height: 65px;
-
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-}
-
-#pricing .panel ul.list-group li.list-group-item em {
-	margin: 0 .5ex;
-	font-weight: 300;
-}
-
-
 /*******************************
 
 *  VERTICAL TABS STYLE 
