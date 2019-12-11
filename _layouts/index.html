@@ -73,7 +73,7 @@ layout: default
 										<p class="priceText">{{property.price | append: "&euro;" }}</p>
 									</div>
 									<div class="vcard">
-										<h2><a href="{{property.url}}" class="name">{{property.description[site.lang] | truncate: 50 }}</a></h2>
+										<h2><a href="{{property.url | prepend: site.baseurl }}" class="name">{{property.description[site.lang] | truncate: 50 }}</a></h2>
 										<p class="listingLocation save"><i class="fa fa-map-o"></i>{{property.address[site.lang]}}</p>
 									</div>
 								</div>

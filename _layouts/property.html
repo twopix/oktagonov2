@@ -11,24 +11,30 @@ layout: default
                     <section class="slide">
                         <div class="row">
                             <div class="col-sm-12">
-                                <div class="card pad-all">
-                                    <div id="rev_slider_60_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="vimeo-gallery58">
-                                        <!-- START REVOLUTION SLIDER 5.0.7 auto mode -->
-                                        <div id="rev_slider_details" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
-                                            <ul>
-                                                {% for image in page.gallery %}
-                                                <!-- SLIDE  -->
-                                                <li data-index="rs-{{forloop.index}}"  data-transition="fade" data-slotamount="7"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="{{ image | prepend: site.baseurl_root }}"  data-rotate="0"  data-saveperformance="off"  data-description="">
-                                                    <!-- MAIN IMAGE -->
-                                                    <img src="{{ image | prepend: site.baseurl_root }}"  alt=""  data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-                                                    <!-- LAYERS -->
-                                                </li>
-                                                {% endfor %}
-                                            </ul>
-                                            <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
-                                        </div>
-                                    </div>
-                                    <!-- END REVOLUTION SLIDER -->
+                                <div class="card pad-all"> 
+                                <div id="slider" class="flexslider">
+                                    <ul class="slides">
+                                    {% for image in page.gallery %}
+                                    <!-- SLIDE  -->
+                                    <li data-index="rs-{{forloop.index}}">
+                                        <a href="{{ image | prepend: site.baseurl_root }}" class="gallery-img"><img src="{{ image | prepend: site.baseurl_root }}"  alt=""  class="rev-slidebg"></a>
+                                        <!-- LAYERS -->
+                                    </li>
+                                    {% endfor %}
+                                    </ul>
+                                </div>
+                                <div id="carousel" class="flexslider">
+                                    <ul class="slides">
+                                    {% for image in page.gallery %}
+                                    <!-- SLIDE  -->
+                                    <li data-index="rs-{{forloop.index}}">
+                                        <!-- MAIN IMAGE -->
+                                        <img src="{{ image | prepend: site.baseurl_root }}"  alt=""  class="rev-slidebg">
+                                        <!-- LAYERS -->
+                                    </li>
+                                    {% endfor %}
+                                    </ul>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -41,7 +47,7 @@ layout: default
                         </div>
                         <div class="panel pad-all">
                             <h3 class="hr hr-after">{% t global.lbl_property_desc %} </h3>
-                            <p class="lead">{{page.description[site.lang]}} </p>
+                            <p class="lead">{{page.description[site.lang] | markdownify}} </p>
                             <div class="row">
                                 <div class="col-sm-12">
                                     {{content}}
