@@ -48,3 +48,20 @@ collections:
         name: "gallery"
         widget: "list"
         field: {label: Image, name: image, widget: image}
+      - label: table
+        name: table
+        widget: object
+        fields:
+          - label: en
+            name: en
+            widget: list
+            fields:
+              - {label: key, name: key, widget: string}
+              - {label: value, name: value, widget: string}
+        fields:
+          - label: el
+            name: el
+            widget: list
+            fields:
+              - {label: key, name: key, widget: string}
+              - {label: value, name: value, widget: string}
