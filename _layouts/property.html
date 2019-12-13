@@ -125,12 +125,12 @@ layout: default
                         </div>
                     </div>
                     <!-- /end:widget -->
-                    {% if page.table  %}
+                    {% if page.table[site.lang]  %}
                     <div class="widget card pad-all">
                         <div class="table-responsive">
                             <table class="table table-bordered">
                                 <tbody>
-                                {% for row in page.table %}
+                                {% for row in page.table[site.lang] %}
                                     <tr>
                                         <th scope="row"> {{row.key}} </th>
                                         <td>{{row.value}} </td>
