@@ -58,7 +58,6 @@ collections:
             fields:
               - {label: key, name: key, widget: string}
               - {label: value, name: value, widget: string}
-        fields:
           - label: el
             name: el
             widget: list
