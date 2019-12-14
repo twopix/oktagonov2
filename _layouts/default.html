@@ -21,7 +21,7 @@
     <meta property="og:title" content="{{ page.title[site.lang] }}"/>
     <meta property="og:image" content="{{site.url}}{% t global.og.image %}"/>
     <meta property="og:description" content="{{ page.description[site.lang] | strip_html | truncate: 120}}"/>
-    <meta property="og:url" content="{{ global.baseurl }}{% if page.url %}{{ page.url }}{% endif %}"/>
+    <meta property="og:url" content="{{ site.url }}{% if page.url %}{{ page.url }}{% endif %}"/>
     <meta property="og:locale" content="{% t global.og.locale %}"/>    
 	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 	<!-- Bootstrap core CSS -->
