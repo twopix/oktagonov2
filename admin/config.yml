@@ -64,3 +64,19 @@ collections:
             fields:
               - {label: key, name: key, widget: string}
               - {label: value, name: value, widget: string}
+      - label: features
+        name: features
+        widget: object
+        fields:
+          - label: en
+            name: en
+            widget: list
+            fields:
+              - {label: "label", name: "label", widget: "string"}
+              - {label: "check", name: "check", widget: "boolean", default: true}
+          - label: el
+            name: el
+            widget: list
+            fields:
+              - {label: "label", name: "label", widget: "string"}
+              - {label: "check", name: "check", widget: "boolean", default: true}
