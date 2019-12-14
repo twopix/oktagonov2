@@ -13,6 +13,7 @@ global:
   lbl_recentproperties_description: Αυτά είναι τα πιο πρόσφατα ακίνητα που προστέθηκαν
   lbl_property_desc: Περιγραφή
   lbl_property_feat: Χαρακτηριστικά 
+  lbl_price: Τιμή
   lbl_more: περισσότερα...
 
   og:

@@ -52,16 +52,6 @@ layout: default
                                 <div class="col-sm-12">
                                     {{content}}
                                 </div>
-                                <!--<div class="col-sm-4">
-                                    <div class="panel panel-default panel-aside m-top-20">
-                                        <ul class="list-group list-group-aside">
-                                            <li class="list-group-item"><a href="#"><i class="fa fa-block fa-star"></i> Save to Favorite</a></li>
-                                            <li class="list-group-item"><a href="#"><i class="fa fa-block fa-bell"></i> Create Email Alert</a></li>
-                                            <li class="list-group-item"><a href="#"><i class="fa fa-block fa-print"></i> Print this page</a></li>
-                                            <li class="list-group-item"><a href="#"><i class="fa fa-block fa-exclamation-circle"></i> Report Listing</a></li>
-                                        </ul>
-                                    </div>
-                                </div> -->
                             </div>
                             {% if page.features[site.lang]  %}
                             <h3>{% t global.lbl_property_feat %}</h3>
@@ -143,7 +133,11 @@ layout: default
 
                                         </div>
                                         <div class="vcard">
-                                            <h2><a href="{{property.url | prepend: site.baseurl }}" class="name">{{property.title[site.lang]}}</a></h2>
+                                            <h2><a href="{{property.url | prepend: site.baseurl }}" class="name">{{property.title[site.lang]}}</a>
+                                            {% if page.price %}
+                                                <span class="pull-right">{{page.price | append: "&euro;" }}</span>
+                                            {% endif %}
+                                            </h2>
                                             <p class="listingLocation">{{property.address[site.lang]}}</p>
                                         </div>
                                     </div>

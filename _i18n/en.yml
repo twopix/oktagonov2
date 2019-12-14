@@ -13,6 +13,7 @@ global:
   lbl_recentproperties_description: These are the most recent properties added
   lbl_property_desc: Property Description
   lbl_property_feat: Property Features
+  lbl_price: Price
   lbl_more: more...
 
   og:
