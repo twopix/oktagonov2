@@ -64,9 +64,37 @@ gallery:
   - /assets/img/properties/monokatoikia-leykopetra3.jpg
   - /assets/img/properties/monokatoikia-leykopetra4.jpg
   - /assets/img/properties/monokatoikia-leykopetra5.jpg
-
+table:
+  el:
+    - key: Τιμή ανά τ.μ.
+      value: € 502
+    - key: Περιοχή
+      value: 'Λευκόπετρα Ημαθίας, μεταξύ Γεωργιανοί και Μικρή Σάντα'
+    - key: Ζώνη
+      value: Οικιστική
+    - key: Έτος κατασκευής
+      value: 1990
+    - key: Σύστημα θέρμανσης
+      value: Πετρέλαιο (αυτόνομη θέρμανση)
+    - key: Επίπεδα
+      value: 3
+    - key: Κουζίνες
+      value: 1
+    - key: Σαλόνι - τραπεζαρία
+      value: 1
+    - key: Υπνοδωμάτια
+      value: 3
+    - key: Μπάνια
+      value: 2
+    - key: Υπόγεια αποθήκη
+      value: 1
+    - key: Κλειστό γκαράζ
+      value: 1
+  en:
+    - key: key
+      value: value
 features:
-  el: 
+  el:
     - check: true
       label: Air conditioning
     - check: true
@@ -112,40 +140,11 @@ features:
     - check: true
       label: Towelwes
     - check: true
-      label: Use of pool 
+      label: Use of pool
+    - check: true
+      label: kouzina
   en:
-    - check: false
+    - check: true
       label: pool garden
-
-
-table:
-  el:
-    - key: Τιμή ανά τ.μ.
-      value: € 502
-    - key: Περιοχή
-      value: 'Λευκόπετρα Ημαθίας, μεταξύ Γεωργιανοί και Μικρή Σάντα'
-    - key: Ζώνη
-      value: Οικιστική
-    - key: Έτος κατασκευής
-      value: 1990
-    - key: Σύστημα θέρμανσης
-      value: Πετρέλαιο (αυτόνομη θέρμανση)
-    - key: Επίπεδα
-      value: 3
-    - key: Κουζίνες
-      value: 1
-    - key: Σαλόνι - τραπεζαρία
-      value: 1
-    - key: Υπνοδωμάτια
-      value: 3
-    - key: Μπάνια
-      value: 2
-    - key: Υπόγεια αποθήκη
-      value: 1
-    - key: Κλειστό γκαράζ
-      value: 1
-  en:
-    - key: key
-      value: value
 ---
 
