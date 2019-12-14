@@ -211,7 +211,14 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.2/jquery.flexslider.js"></script>
 	{% endif %} 
 	<script src="{{ "/assets/js/init.js" | prepend: site.baseurl_root }}"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
+	gtag('config', '{{ site.google_analytics }}');
+	</script>
 </body>
-
 </html>
