@@ -144,7 +144,7 @@ features:
     - check: true
       label: kouzina
   en:
-    - check: true
+    - check: false
       label: pool garden
 ---
 
