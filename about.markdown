@@ -1,18 +1,21 @@
 ---
 layout: default
-title: About
-permalink: /about/
+title: 
+  en: About
+  el: Ποιοι είμαστε 
+description:
+  en: Thessaloniki-based Oktagono is dealing with real estate services, finding, selling and renting real estate, business spaces and land.
+  el: Η εταιρεία Oktagono με έδρα τη Θεσσαλονίκη δραστηριοποιείται στις μεσιτικές υπηρεσίες, εύρεσης, πώλησης και ενοικίασης ακινήτων, επαγγελματικών χώρων και γης. 
 ---
-
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+<section class="page-sumbit">
+  <div class="vertical shadow">
+     <div class="container card">
+        <div class="">
+        <h1>{% t global.title %}</h1>
+        <h2>{{ site.subtitle }}</h2>
+        <p>{{page.description[site.lang]}}</p>  
+        {% translate_file about.md %}
+        </div>
+    </div>
+  </div>
+</section>
