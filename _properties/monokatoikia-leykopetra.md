@@ -64,6 +64,60 @@ gallery:
   - /assets/img/properties/monokatoikia-leykopetra3.jpg
   - /assets/img/properties/monokatoikia-leykopetra4.jpg
   - /assets/img/properties/monokatoikia-leykopetra5.jpg
+
+features:
+  el: 
+    - check: true
+      label: Air conditioning
+    - check: true
+      label: Balcony
+    - check: false
+      label: Bedding
+    - check: true
+      label: Cable TV
+    - check: false
+      label: Cleaning after exit
+    - check: true
+      label: Cofee pot
+    - check: true
+      label: Computer
+    - check: false
+      label: Cot
+    - check: true
+      label: Internet
+    - check: false
+      label: Iron
+    - check: true
+      label: Juicer
+    - check: false
+      label: Lift
+    - check: false
+      label: Microwave
+    - check: true
+      label: Oven
+    - check: false
+      label: Parking
+    - check: false
+      label: Parquet
+    - check: false
+      label: Radio
+    - check: true
+      label: Roof terrace
+    - check: false
+      label: Smoking allowed
+    - check: true
+      label: Terrace
+    - check: false
+      label: Toaster
+    - check: true
+      label: Towelwes
+    - check: true
+      label: Use of pool 
+  en:
+    - check: false
+      label: pool garden
+
+
 table:
   el:
     - key: Τιμή ανά τ.μ.

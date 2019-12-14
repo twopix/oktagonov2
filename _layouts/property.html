@@ -63,46 +63,29 @@ layout: default
                                     </div>
                                 </div> -->
                             </div>
+                            {% if page.features[site.lang]  %}
                             <h3>{% t global.lbl_property_feat %}</h3>
                             <div class="row">
                                 <div class="col-md-4 col-sm-4">
+                                        {% assign plus_3 = page.features[site.lang].size | plus: 3  %}
+                                        {% assign divider = page.features[site.lang].size | modulo: 3  %}
+                                        {% assign round_val = plus_3 | minus: divider  %}
+                                        {% assign chunk = round_val | divided_by: 3  %}
                                     <ul class="features-list">
-                                        <li><i class="fa fa-check"></i> Air conditioning</li>
-                                        <li><i class="fa fa-check"></i> Balcony</li>
-                                        <li><i class="fa fa-times"></i> Bedding</li>
-                                        <li><i class="fa fa-check"></i> Cable TV</li>
-                                        <li><i class="fa fa-times"></i> Cleaning after exit</li>
-                                        <li><i class="fa fa-check"></i> Cofee pot</li>
-                                        <li><i class="fa fa-check"></i> Computer</li>
-                                        <li><i class="fa fa-times"></i> Cot</li>
+                                        {% for feature in page.features[site.lang] %}
+                                            {% assign value = forloop.index | modulo: chunk %}
+                                            {% if value == 0 %}
+                                                </div>
+                                                <div class="col-md-4 col-sm-4">
+                                                    <ul class="features-list">
+                                            {% endif %}
+                                            <li><i class="fa fa-{% if feature.check %}check{% else%}times{%endif%}"></i> {{feature.label}}</li>
+                                        {% endfor %}
                                     </ul>
-                                </div>
-                                <div class="col-md-4 col-sm-4">
-                                    <ul class="features-list">
-                                        <li><i class="fa fa-check"></i> Internet</li>
-                                        <li><i class="fa fa-times"></i> Iron</li>
-                                        <li><i class="fa fa-check"></i> Juicer</li>
-                                        <li><i class="fa fa-times"></i> Lift</li>
-                                        <li><i class="fa fa-times"></i> Microwave</li>
-                                        <li><i class="fa fa-check"></i> Oven</li>
-                                        <li><i class="fa fa-times"></i> Parking</li>
-                                        <li><i class="fa fa-times"></i> Parquet</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-4 col-sm-4">
-                                    <ul class="features-list">
-                                        <li><i class="fa fa-times"></i> Radio</li>
-                                        <li><i class="fa fa-check"></i> Roof terrace</li>
-                                        <li><i class="fa fa-times"></i> Smoking allowed</li>
-                                        <li><i class="fa fa-check"></i> Terrace</li>
-                                        <li><i class="fa fa-times"></i> Toaster</li>
-                                        <li><i class="fa fa-check"></i> Towelwes</li>
-                                        <li><i class="fa fa-check"></i> Use of pool</li>
-                                        <li><i class="fa fa-check"></i> Video</li>
-                                    </ul>
-                                </div>
+                                </div> 
                             </div>
                         </div>
+                        {% endif %}
                         <!--/panel -->
                     </section>
                 </div>
