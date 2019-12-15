@@ -15,10 +15,8 @@ layout: default
                                 <div id="slider" class="flexslider">
                                     <ul class="slides">
                                     {% for image in page.gallery %}
-                                    <!-- SLIDE  -->
                                     <li data-index="rs-{{forloop.index}}">
                                         <a href="{{ image | prepend: site.baseurl_root }}" class="gallery-img"><img src="{{ image | prepend: site.baseurl_root }}"  alt=""  class="rev-slidebg"></a>
-                                        <!-- LAYERS -->
                                     </li>
                                     {% endfor %}
                                     </ul>
@@ -26,11 +24,8 @@ layout: default
                                 <div id="carousel" class="flexslider">
                                     <ul class="slides">
                                     {% for image in page.gallery %}
-                                    <!-- SLIDE  -->
                                     <li data-index="rs-{{forloop.index}}">
-                                        <!-- MAIN IMAGE -->
                                         <img src="{{ image | prepend: site.baseurl_root }}"  alt=""  class="rev-slidebg">
-                                        <!-- LAYERS -->
                                     </li>
                                     {% endfor %}
                                     </ul>
@@ -40,7 +35,12 @@ layout: default
                         </div>
                         <div class="panel pad-all">
                             <div class="listingInfo">
-                                <h3><a href="#" class="name">{{page.title[site.lang]}}</a></h3>
+                                <h3>
+                                    <a href="#" class="name">{{page.title[site.lang]}}</a> 
+                                    {% if page.price %}
+                                        <span class="pull-right">{{page.price | append: "&euro;" }}</span>
+                                    {% endif %}
+                                </h3>
                                 <p class="listingLocation"><i class="fa fa-map-o"></i>{{page.address[site.lang]}}</p>
                                 <p class="lead">{{page.name[site.lang]}} </p>
                             </div>
@@ -130,14 +130,9 @@ layout: default
                                         </div>
                                         <div class="pull-right">
                                             <p class="priceText">{{property.price | append: "&euro;" }} </p>
-
                                         </div>
                                         <div class="vcard">
-                                            <h2><a href="{{property.url | prepend: site.baseurl }}" class="name">{{property.title[site.lang]}}</a>
-                                            {% if page.price %}
-                                                <span class="pull-right">{{page.price | append: "&euro;" }}</span>
-                                            {% endif %}
-                                            </h2>
+                                            <h2><a href="{{property.url | prepend: site.baseurl }}" class="name">{{property.title[site.lang]}}</a></h2>
                                             <p class="listingLocation">{{property.address[site.lang]}}</p>
                                         </div>
                                     </div>
