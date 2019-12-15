@@ -18,7 +18,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="{{ page.description[site.lang] | strip_html | truncate: 120}}">
 	<title>{{ page.title[site.lang] }} - {{site.title}}</title>
-    <meta property="og:title" content="{{ page.title[site.lang] }}"/>
+    <meta property="og:title" content="{{ page.title[site.lang] }}  - {{site.title}}"/>
     <meta property="og:image" content="{{site.url}}{% t global.og.image %}"/>
     <meta property="og:description" content="{{ page.description[site.lang] | strip_html | truncate: 120}}"/>
     <meta property="og:url" content="{{ site.url }}{% if page.url %}{{ page.url }}{% endif %}" />
